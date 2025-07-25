@@ -1,0 +1,110 @@
+
+
+
+[
+    {
+        "id": 1,
+        "nombre": "Silla Deportiva PRO",
+        "descripcion": "Diseño ultraligero ideal para competencias.",
+        "precio": 1250,
+        "imagen": "https://i.postimg.cc/VLyFCzcy/1.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Silla Semideportiva ACTIVE",
+        "descripcion": "Perfecta para uso diario con estilo.",
+        "precio": 950,
+        "imagen": "https://i.postimg.cc/c4m8LWxB/2.png"
+    },
+    {
+        "id": 3,
+        "nombre": "Silla Racing X",
+        "descripcion": "Construida para velocidad y agilidad extrema.",
+        "precio": 1450,
+        "imagen": "https://i.postimg.cc/9MZD55gT/3.png"
+    },
+    {
+        "id": 4,
+        "nombre": "Silla Urbana GO",
+        "descripcion": "Compacta y resistente, ideal para ciudad.",
+        "precio": 870,
+        "imagen": "https://i.postimg.cc/BbNQ4qT8/4.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Silla Carbono Elite",
+        "descripcion": "Fabricada en fibra de carbono ultraligera.",
+        "precio": 1850,
+        "imagen": "https://i.postimg.cc/fyWDH6GM/5.png"
+    },
+    {
+        "id": 6,
+        "nombre": "Silla PowerMax",
+        "descripcion": "Asistencia eléctrica integrada para más autonomía.",
+        "precio": 2200,
+        "imagen": "https://i.postimg.cc/DyMngpBK/6.jpgv"
+    },
+    {
+        "id": 7,
+        "nombre": "Silla Compact FIT",
+        "descripcion": "Diseño plegable para fácil transporte.",
+        "precio": 790,
+        "imagen": "https://i.postimg.cc/N0hYhy3J/7.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "Silla Training Pro",
+        "descripcion": "Modelo semideportivo para entrenamientos regulares.",
+        "precio": 1020,
+        "imagen": "https://i.postimg.cc/nhmb1FXv/8.jpg"
+    },
+    {
+        "id": 9,
+        "nombre": "Silla All-Terrain",
+        "descripcion": "Ruedas especiales para todo tipo de terreno.",
+        "precio": 1350,
+        "imagen": "https://i.postimg.cc/fbbPrML2/9.jpg"
+    },
+    {
+        "id": 10,
+        "nombre": "Silla Rehabilitación PRO",
+        "descripcion": "Diseñada para clínicas y procesos de recuperación.",
+        "precio": 900,
+        "imagen": "https://i.postimg.cc/VLDBHnCw/10.jpg"
+    },
+    {
+        "id": 11,
+        "nombre": "Silla Infantil Speedy",
+        "descripcion": "Modelo deportivo adaptado para niños.",
+        "precio": 890,
+        "imagen": "https://i.postimg.cc/PqZDhwPP/11.jpg"
+    },
+    {
+        "id": 12,
+        "nombre": "Silla Off-Road Xtreme",
+        "descripcion": "Ideal para aventura.",
+        "precio": 1600,
+        "imagen": "https://i.postimg.cc/rsh0gGYY/12.jpg"
+    },
+    {
+        "id": 13,
+        "nombre": "Silla Tennis Master",
+        "descripcion": "Diseñada específicamente para tenis adaptado.",
+        "precio": 1480,
+        "imagen": "https://i.postimg.cc/m2DFkqPx/13.jpg"
+    },
+    {
+        "id": 14,
+        "nombre": "Silla Lifestyle SMART",
+        "descripcion": "Moderna, minimalista y altamente funcional.",
+        "precio": 980,
+        "imagen": "https://i.postimg.cc/Dw4JdXQB/14.jpg"
+    },
+    {
+        "id": 15,
+        "nombre": "Silla Baloncesto PRO",
+        "descripcion": "Uso intensivo en partidos y entrenamientos.",
+        "precio": 1300,
+        "imagen": "https://i.postimg.cc/vBb4s2JN/15.jpg"
+    }
+]

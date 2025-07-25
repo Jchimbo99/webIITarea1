@@ -1,0 +1,54 @@
+<div class="min-h-screen bg-gray-50 px-8 py-24">
+
+    <h1 class="text-5xl font-extrabold text-center text-indigo-900 mb-16 tracking-tight">
+        Catálogo Premium de Productos
+    </h1>
+
+
+    <p class="max-w-4xl mx-auto text-center text-gray-700 text-lg leading-relaxed mb-20 font-light">
+        Descubre nuestra exclusiva colección de sillas deportivas y semideportivas diseñadas para brindar
+        un equilibrio perfecto entre ergonomía, resistencia y estilo. Fabricadas con materiales de alta calidad y
+        tecnología avanzada, cada modelo está pensado para maximizar tu rendimiento y confort.
+    </p>
+
+    <div *ngIf="productos.length > 0; else cargando"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-12 max-w-7xl mx-auto">
+        <div *ngFor="let producto of productos"
+            class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-400 flex flex-col overflow-hidden">
+
+            <div
+                class="relative bg-gray-100 p-6 aspect-[4/3] flex items-center justify-center overflow-hidden rounded-t-3xl">
+                <img [src]="producto.imagen" [alt]="producto.nombre" loading="lazy"
+                    class="object-contain max-h-full max-w-full transform transition-transform duration-500 hover:scale-105" />
+            </div>
+
+
+            <div class="p-8 flex flex-col flex-grow">
+                <h2 class="text-2xl font-semibold text-indigo-900 mb-3 truncate">
+                    {{ producto.nombre }}
+                </h2>
+                <p class="text-gray-600 flex-grow leading-relaxed text-sm sm:text-base mb-6">
+                    {{ producto.descripcion }}
+                </p>
+
+                <div class="flex items-center justify-between">
+                    <span class="text-2xl font-extrabold text-green-600">
+                        $ {{ producto.precio | number:'1.2-2' }}
+                    </span>
+
+                    <button [attr.aria-label]="'Ver detalles de ' + producto.nombre"
+                        class="px-6 py-2 bg-indigo-700 text-white rounded-full font-semibold hover:bg-indigo-800 transition-colors duration-300 shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        Ver detalles
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ng-template #cargando>
+        <p class="text-center text-gray-500 text-lg italic mt-40" aria-live="polite" role="status">
+            Cargando productos...
+        </p>
+    </ng-template>
+</div>
