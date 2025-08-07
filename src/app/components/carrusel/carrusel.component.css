@@ -1,0 +1,130 @@
+#default-carousel {
+  background-color: #f3f4f6; /* gray-100 */
+  border-radius: 1rem;
+  box-shadow: 0 12px 24px rgba(79, 70, 229, 0.3);
+  max-width: 90vw;
+  margin: 2rem auto;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+}
+
+#default-carousel .relative.h-96 {
+  height: 24rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#default-carousel [data-carousel-item] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+#default-carousel [data-carousel-item].active {
+  opacity: 1;
+  position: relative;
+  pointer-events: auto;
+}
+
+#default-carousel img {
+  width: 20rem; /* w-80 */
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 1rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.5s ease;
+}
+
+#default-carousel img:hover {
+  transform: scale(1.05);
+}
+
+#default-carousel .absolute.bottom-6 {
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  z-index: 30;
+}
+
+#default-carousel button[w-5][h-5] {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 9999px;
+  background-color: rgba(79, 70, 229, 0.7);
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(79, 70, 229, 0.5);
+}
+
+#default-carousel button[w-5][h-5]:hover,
+#default-carousel button[w-5][h-5]:focus {
+  background-color: #4338ca;
+  outline: none;
+  box-shadow: 0 0 12px #4338ca;
+}
+
+#default-carousel button[w-5][h-5][aria-current="true"] {
+  background-color: #4338ca;
+  box-shadow: 0 0 12px #4338ca;
+}
+
+#default-carousel button[data-carousel-prev],
+#default-carousel button[data-carousel-next] {
+  top: 0;
+  height: 100%;
+  width: 3rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 40;
+  color: #4338ca;
+}
+
+#default-carousel button[data-carousel-prev] {
+  left: 0;
+}
+
+#default-carousel button[data-carousel-next] {
+  right: 0;
+}
+
+#default-carousel button span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  background-color: rgba(79, 70, 229, 0.3);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#default-carousel button:hover span,
+#default-carousel button:focus span {
+  background-color: #4338ca;
+  color: white;
+  outline: none;
+  box-shadow: 0 0 15px #4338ca;
+}
+
+#default-carousel svg {
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  width: 1.5rem;
+  height: 1.5rem;
+}

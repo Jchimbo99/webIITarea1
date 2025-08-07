@@ -1,13 +1,22 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
+import { AutenticacionService } from '../../service/autenticacion.service';
 
 @Component({
   selector: 'app-nav-bar',
   standalone: true,
   imports: [RouterLink],
   templateUrl: './nav-bar.component.html',
-  styleUrl: './nav-bar.component.css'
+  styleUrls: ['./nav-bar.component.css']  
 })
-export class NavBarComponent {
+export class NavComponent {
+  constructor(
+    public authServicio: AutenticacionService,
+    private router: Router
+  ) { }
 
+  logout() {
+    this.authServicio.logout();
+    this.router.navigate(['/']);
+  }
 }

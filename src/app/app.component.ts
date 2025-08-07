@@ -1,19 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { PresentacionComponent } from "./components/presentacion/presentacion.component";
-import { FooterComponent } from "./components/footer/footer.component";
-import { Presentacion2Component } from "./components/presentacion2/presentacion2.component";
-
-
+import { NavComponent } from './components/nav-bar/nav-bar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-
-  imports: [NavBarComponent, RouterOutlet, FooterComponent],
+  imports: [NavComponent, RouterOutlet, FooterComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']   // <--- corregido
 })
 export class AppComponent {
   title = 'actividad';

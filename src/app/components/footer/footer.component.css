@@ -1,0 +1,65 @@
+footer {
+  background-color: #2f855a; /* mismo verde medio que el nav */
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.15);
+  margin-top: 6rem;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f0fdfa; /* texto blanco humo */
+}
+
+footer .max-w-screen-xl {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+footer a {
+  color: #c6f6d5; /* verde claro */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #9ae6b4; /* verde más claro */
+  text-decoration: underline;
+}
+
+footer a.routerLink {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #f0fdfa;
+}
+
+footer svg {
+  height: 2rem;
+  width: 2rem;
+  stroke: #68d391; /* verde suave */
+}
+
+footer p {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.875rem;
+  color: #c6f6d5;
+}
+
+@media (min-width: 640px) {
+  footer p {
+    margin-bottom: 0;
+  }
+  footer .flex {
+    flex-wrap: nowrap;
+  }
+  footer .flex > div {
+    margin-left: 1.5rem;
+  }
+}

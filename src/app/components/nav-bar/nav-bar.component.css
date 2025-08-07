@@ -1,0 +1,104 @@
+nav {
+  background-color: #2f855a; /* verde medio */
+  border-bottom: 1px solid #276749; /* verde oscuro borde */
+  box-shadow: 0 4px 8px rgba(45, 85, 47, 0.3); /* sombra suave */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav .max-w-screen-xl {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+nav a {
+  color: #f0fdfa; /* blanco humo */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #22543d; /* verde oscuro para texto hover */
+  background-color: #68d391; /* verde claro hover */
+}
+
+nav .text-red-100 {
+  color: #fed7d7; /* rojo suave */
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav .text-red-100:hover {
+  color: #f56565; /* rojo más intenso */
+}
+
+nav button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  color: #c6f6d5; /* verde muy claro */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav button:hover,
+nav button:focus {
+  background-color: #276749; /* verde oscuro */
+  color: #9ae6b4; /* verde claro */
+  outline: none;
+  box-shadow: 0 0 8px #68d391;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border: 1px solid #276749;
+  border-radius: 12px;
+  background-color: #2f855a;
+  padding: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    gap: 2rem;
+  }
+}
+
+nav img {
+  height: 2rem;
+  width: auto;
+}
+
+nav span.self-center {
+  font-weight: 700;
+  font-size: 1.375rem;
+  letter-spacing: 0.05em;
+  color: #f0fdfa;
+}
